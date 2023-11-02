@@ -22,7 +22,8 @@ const wallets = [
 router.get('/',(req,res) => {
     res.render('wallets', { title: 'Search Results - wallets', ad: wallets });
   });
-   
+
+ 
   module.exports = router;
 
 
