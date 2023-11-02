@@ -4,7 +4,7 @@ block content
   h1= title
   .container-fluid
     .row
-      - for (let w of ad)
+      each w in ad
         .col-sm-2
           p WalletsType: #{w.wallets_type}
           p WalletsColor: #{w.wallets_color}
