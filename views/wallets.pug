@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  .container-fluid
+    .row
+      - for (let w of ad)
+        .col-sm-2
+          p WalletsType: #{w.wallets_type}
+          p WalletsColor: #{w.wallets_color}
+          p WalletsCapacity : #{w.wallets_capacity}
+  br
+  
